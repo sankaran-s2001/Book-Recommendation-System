@@ -11,6 +11,22 @@ An ML-powered web application that recommends books using collaborative filterin
 
 **[Live Demo - Try it here!](https://book-recommendation-system-x2kvzjycirbgm54surkaea.streamlit.app/)**
 
+## 📊 About the Dataset
+
+The [Book Recommendation Dataset](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset) contains book ratings and user data for building recommendation systems.
+
+**Files used:** `Books.csv`, `Users.csv`, `Ratings.csv`
+**Total:** 1,149,780 ratings from 278,858 users on 271,360 books
+
+**Key Data:**
+
+
+| File | Contains |
+| :-- | :-- |
+| Books.csv | Book details (ISBN, title, author, year, publisher, images) |
+| Users.csv | User info (ID, location, age) |
+| Ratings.csv | User ratings (1-10 scale, 0 for implicit) |
+
 ## What This Project Does
 
 Find your next favourite book in seconds! This app gives you:
