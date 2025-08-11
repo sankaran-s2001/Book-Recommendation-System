@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
+import requests
 
 
 def set_background_image(image_file):
@@ -231,4 +232,5 @@ else:
 # Footer
 st.markdown("---")
 st.markdown("*✨Created by Sankaran S*")
+
 
