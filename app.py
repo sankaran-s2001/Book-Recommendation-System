@@ -51,10 +51,20 @@ set_background_image('background_image.jpg')
 # Load saved models
 @st.cache_data
 def load_models():
-    popular_df = pickle.load(open('popular.pkl','rb'))
-    pt = pickle.load(open('pt.pkl','rb'))
-    books = pickle.load(open('books.pkl','rb'))
-    similarity_scores = pickle.load(open('similarity_scores.pkl','rb'))
+    # Base URL to Hugging Face repo files
+    base_url = "https://huggingface.co/sankarans2001/Book-Recommendation-System/resolve/main/"
+    
+    def load_pickle_from_url(filename):
+        url = base_url + filename
+        response = requests.get(url)
+        response.raise_for_status()  # Throw error if request failed
+        return pickle.loads(response.content)
+    
+    popular_df = load_pickle_from_url('popular.pkl')
+    pt = load_pickle_from_url('pt.pkl')
+    books = load_pickle_from_url('books.pkl')
+    similarity_scores = load_pickle_from_url('similarity_scores.pkl')
+    
     return popular_df, pt, books, similarity_scores
 
 # Load models
@@ -221,3 +231,4 @@ else:
 # Footer
 st.markdown("---")
 st.markdown("*✨Created by Sankaran S*")
+
