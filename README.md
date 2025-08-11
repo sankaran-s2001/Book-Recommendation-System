@@ -7,6 +7,8 @@ An ML-powered web application that recommends books using collaborative filterin
 
 ![App Screenshot](app_screenshot.jpg)
 
+![App Screenshot](app_screenshot2.jpg)
+
 **[Live Demo - Try it here!](https://book-recommendation-system-9sge.onrender.com)**
 
 ## What This Project Does
