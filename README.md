@@ -5,15 +5,15 @@
 
 An ML-powered web application that recommends books using collaborative filtering, just like Netflix recommends movies!
 
-![App Screenshot](app_screenshot.jpg)
+![App Screenshot](app_screenshot1.jpg)
 
 ![App Screenshot](app_screenshot2.jpg)
 
-**[Live Demo - Try it here!](https://book-recommendation-system-9sge.onrender.com)**
+**[Live Demo - Try it here!](https://book-recommendation-system-x2kvzjycirbgm54surkaea.streamlit.app/)**
 
 ## What This Project Does
 
-Find your next favorite book in seconds! This app gives you:
+Find your next favourite book in seconds! This app gives you:
 
 - **Popular Books** 📈 - Top 50 books loved by expert readers
 - **Personalized Recommendations** 🤝 - Books similar to ones you enjoyed
@@ -26,7 +26,6 @@ Perfect for book lovers, students, and anyone looking for their next great read.
 - **Expert-Based** - Recommendations from 1,137 serious readers
 - **Visual Interface** - See book covers, authors, and publication details
 - **Smart Algorithms** - Collaborative filtering with 94% accuracy
-- **Beautiful UI** - Dark theme with transparent sidebar
 
 
 ## How It Works
@@ -40,7 +39,7 @@ Perfect for book lovers, students, and anyone looking for their next great read.
 **Personalized Recommendations:**
 
 - Choose from 220 carefully selected books
-- AI finds similar books using cosine similarity
+- Algorithm finds similar books using cosine similarity
 - Shows similarity scores (60-95% confidence)
 - Based on reading patterns of expert users
 
@@ -121,7 +120,7 @@ streamlit run app.py
 
 - Streamlit application development
 - UI/UX design with custom CSS
-- Cloud deployment with model storage
+- Streamlit deployment with model storage
 
 **Data Science:**
 
